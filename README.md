@@ -64,18 +64,3 @@ Let `n` be the number of stored items (`0 <= n <= 8`).
 
 The array occupies O(8) = O(1) space for this fixed-capacity application.
 Search results and display ordering use O(n) temporary space.
-
-## Manual validation ideas
-
-1. Try removing, peeking, and displaying before adding anything.
-2. Add a food with weight `0`, a non-number weight, or a malformed date.
-3. Try a date before today and one 15 days from today; then use today and the
-   date 14 days from today.
-4. Add 8 items and try adding a ninth.
-5. Add two different foods, compare LIFO with FIFO peeking/removal, and search
-   for a name using different letter casing.
-
-For the presentation, explain the chosen capacity discrepancy, array/deque
-operations, validation, test results, and complexity table in your own words.
-Create the poster and record your own 4–5 minute voice explanation; do not
-represent generated commits, recordings, or links as your own work.
